@@ -6,7 +6,7 @@ function CountryItem({ country }) {
   const [showFull, setShowFull] = useState(false);
 
   return (
-    <li key={country.cca2}>
+    <li>
       {showFull ? <Country country={country} /> : country.name.common}
       <button type="button" onClick={() => setShowFull(!showFull)}>
         {showFull ? 'hide' : 'show'}

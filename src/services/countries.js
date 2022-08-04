@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-const baseUrl = 'https://restcountries.com/v3.1/all';
+const baseUrl = 'https://restcountries.com/v3.1';
 
 async function getAll() {
-  const response = await axios.get(baseUrl);
+  const response = await axios.get(`${baseUrl}/all`);
   return response.data;
 }
 
